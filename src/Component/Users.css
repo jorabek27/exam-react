@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.arrow svg {
+  width: 10px;
+  height: 10px;
+  color: #007bff;
+}
+.more-user {
+  width: 25px;
+  height: 25px;
+}
+td{
+  border-bottom: 1px solid #33333379;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.749);
+}
+th{
+  color: rgba(0, 0, 0, 0.838);
+}

@@ -1,0 +1,146 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modal container */
+.modal-container {
+  background-color: white;
+  width: 70%;
+  max-height: 90vh;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal header */
+.modal-header {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Modal content left & right */
+.bigpair {
+  display: flex;
+  padding: 25px 50px;
+  gap: 20px;
+  height: 100vh;
+}
+
+.modal-body-left {
+  width: 40%;
+}
+
+.modal-body-right {
+  width: 60%;
+}
+
+/* Form styles */
+nav {
+  width: 748px;
+  padding: 20px;
+  
+}
+
+nav b {
+  color: #2f80ed;
+  font-size: 18px;
+}
+
+.dataediting {
+  padding: 10px 5px;
+  font-size: 14px;
+}
+
+.radio {
+  display: flex;
+  gap: 7px;
+  padding-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.trs,
+.gdepechat {
+  padding: 10px 0;
+}
+
+#input-trs,
+#input-nk {
+  margin: 5px 20px;
+  padding: 5px;
+}
+
+#select-right {
+  padding: 5px;
+  width: 100%;
+  border: 1px solid grey;
+  color: grey;
+}
+
+#textarea {
+  height: 112px;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+.rightinput {
+  width: 100%;
+  padding: 10px;
+}
+
+.pair-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  width: 100%;
+}
+
+.pair {
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Modal footer (buttons area) */
+footer {
+  width: 100%;
+  margin-top: -200px;
+  text-align: end;
+  padding: 30px 50px;
+  background-color: #f9f9f9;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
