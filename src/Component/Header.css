@@ -1,58 +1,63 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  background: #f7f9fb;
-}
+/* Chap tomonda joylashgan elementlar (logo, nav, actions) */
 .left {
   display: flex;
   gap: 70px;
   align-items: center;
 }
 
+/* Bosh Header konteyneri */
 header {
-  padding: 30px 20px 20px 20px;
+  padding: 30px 20px 20px;
   height: 85px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* kichik ekranlarda elementlar pastga tushadi */
   margin-bottom: 20px;
-  background-color: #9898984c;
+  background-color: #9898984c; /* kulrang, biroz shaffof */
+}
+
+/* Navigatsiya ro‘yxati */
+nav ul {
+  display: flex;
+  gap: 20px;
 }
 nav ul li {
   list-style: none;
   cursor: pointer;
 }
 
-nav ul {
-  display: flex;
-  gap: 20px;
-}
+/* Harakat tugmalari uchun konteyner */
 .actions {
   display: flex;
   gap: 10px;
 }
+
+/* Tugmalar uslubi */
 .btn {
   padding: 5px 10px;
   border-radius: 5px;
   border: 2px solid #007bff;
   background-color: #fff;
   color: #007bff;
+  cursor: pointer;
+  transition: 0.3s;
 }
+
+/* Moviy tugma */
 .btn.blue {
   background-color: #007bff;
   color: white;
 }
+
+/* Oxirgi (foydalanuvchi) bo‘limi */
 .end {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+
+/* Kontakt va chiqish ikonkalari */
 .contact {
   width: 32px;
   height: 32px;

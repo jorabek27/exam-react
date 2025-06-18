@@ -9,46 +9,25 @@ function Header() {
   const [showNewModal, setShowNewModal] = useState(false);
   const [showEditModal, setShowEditModal] = useState(false);
 
+  const closeNewModal = () => setShowNewModal(false);
+  const closeEditModal = () => setShowEditModal(false);
+
   return (
     <div className="container">
       <header>
         <div className="left">
-          <h1 style={{ color: "grey", fontWeight: 100 }}>CRM</h1>
+          <h1 className="logo">CRM</h1>
 
           <nav>
-            <ul>
+            <ul className="nav-links">
               <li>
-                <Link
-                  to="/"
-                  style={{
-                    textDecoration: "none",
-                    listStyle: "none",
-                    color: "black",
-                  }}
-                >
-                  Заказы
-                </Link>
+                <Link to="/">Заказы</Link>
               </li>
               <li>
-                <Link
-                  to="/page2"
-                  style={{
-                    textDecoration: "none",
-                    listStyle: "none",
-                    color: "black",
-                  }}
-                >
-                  Архив
-                </Link>
+                <Link to="/page2">Архив</Link>
               </li>
               <li>
-                <Link to="/user"  style={{
-                    textDecoration: "none",
-                    listStyle: "none",
-                    color: "black",
-                  }}>
-                  Пользователи
-                </Link>
+                <Link to="/user">Пользователи</Link>
               </li>
             </ul>
           </nav>
@@ -70,16 +49,16 @@ function Header() {
         </div>
       </header>
 
-      {/* Modallar */}
+      {/* Modal oynalar */}
       {showNewModal && (
         <div className="overlay">
-          <Newmodal onClose={() => setShowNewModal(false)} />
+          <Newmodal onClose={closeNewModal} />
         </div>
       )}
 
       {showEditModal && (
         <div className="overlay">
-          <Editmodal onClose={() => setShowEditModal(false)} />
+          <Editmodal onClose={closeEditModal} />
         </div>
       )}
     </div>

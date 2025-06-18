@@ -4,30 +4,29 @@ import { CiCircleMore } from "react-icons/ci";
 
 function Table() {
   return (
-    <table >
+    <table>
       <thead>
         <tr>
           <th></th>
-          <th>No  <div className="arrow">
-                <BiSolidUpArrow />
-                <BiSolidDownArrow />
-              </div></th>
           <th>
-            <p>
-             
-              Дата монтажа
-              <div className="arrow">
-                <BiSolidUpArrow />
-                <BiSolidDownArrow />
-              </div>
-            </p>
-            <p>
-              ТРЦ
-              <div className="arrow">
-                <BiSolidUpArrow />
-                <BiSolidDownArrow />
-              </div>
-            </p>
+            No
+            <div className="arrow">
+              <BiSolidUpArrow />
+              <BiSolidDownArrow />
+            </div>
+          </th>
+          <th>
+            Дата монтажа
+            <div className="arrow">
+              <BiSolidUpArrow />
+              <BiSolidDownArrow />
+            </div>
+            <br />
+            ТРЦ
+            <div className="arrow">
+              <BiSolidUpArrow />
+              <BiSolidDownArrow />
+            </div>
           </th>
           <th>
             Вид работ
@@ -101,6 +100,7 @@ function Table() {
           </th>
         </tr>
       </thead>
+
       <tbody>
         <tr>
           <td>
@@ -131,20 +131,20 @@ function Table() {
             <p>Радуга бренд</p>
           </td>
           <td>
-            <p> Солнечный город</p>
+            <p>Солнечный город</p>
           </td>
           <td>
             <p className="photo">Фото</p>
           </td>
           <td>
-            <p> Екатерина Попова</p>
+            <p>Екатерина Попова</p>
           </td>
           <td>
             <p>Морозов Роман Викторович</p>
           </td>
           <td>
             <div className="cost">
-              <p> 45000</p>
+              <p>45000</p>
               <div>
                 <span className="adm">адм.</span>
                 <p>35000</p>
@@ -152,10 +152,10 @@ function Table() {
             </div>
           </td>
           <td>
-            <select name="" id="select">
-              <option value="">В ожидании</option>
-              <option value="">Принято</option>
-              <option value="">Выполнено</option>
+            <select name="status" id="select">
+              <option value="waiting">В ожидании</option>
+              <option value="accepted">Принято</option>
+              <option value="done">Выполнено</option>
             </select>
           </td>
           <td>
@@ -163,7 +163,6 @@ function Table() {
           </td>
         </tr>
       </tbody>
-     
     </table>
   );
 }
